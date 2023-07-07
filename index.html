@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lynx</title>
+    <meta name="theme-color" content="#5865F2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0F0F0F">
+
+    <meta property="og:title" content="Lynx">
+    <meta property="og:description" content="A powerful administration tool designed to aid in the moderation of your Roblox games, all for an affordable price.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1122344992740999240/1126729199642746921/fdgfg.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lynx.baby">
+    <meta property="twitter:title" content="Lynx">
+    <meta property="twitter:description" content="A powerful administration tool designed to aid in the moderation of your Roblox games, all for an affordable price.">
+    <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/1122344992740999240/1126729199642746921/fdgfg.png">
+  
+    <style>
+        body {
+            font-family: "Product Sans", Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        video {
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            filter: blur(5px) brightness(50%);
+            transform: scale(1.1);
+        }
+
+        #typing-effect {
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 24px;
+        }
+
+    .footer {
+        /* Existing styles */
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        font-size: 13px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    </style>
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1122344992740999240/1126725881147166810/Main1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="mars.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="typing-effect">Coming soon.</div>
+
+    <div class="footer">@syn_thius</div>
+
+    <script>
+        function changeText() {
+            var typingEffect = document.getElementById("typing-effect");
+            var text = typingEffect.innerHTML;
+
+            if (text === "Coming soon") {
+                typingEffect.innerHTML = "Coming soon.";
+            } else if (text === "Coming soon.") {
+                typingEffect.innerHTML = "Coming soon..";
+            } else if (text === "Coming soon..") {
+                typingEffect.innerHTML = "Coming soon...";
+            } else if (text === "Coming soon...") {
+                typingEffect.innerHTML = "Coming soon";
+            } else {
+                typingEffect.innerHTML = "Coming soon";
+            }
+        }
+
+        setInterval(changeText, 1000);
+    </script>
+</body>
+</html>
